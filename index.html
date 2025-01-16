@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>A Multimodal Foundation Agent for Financial Trading: Tool-Augmented, Diversified, and Generalist </title>
+  <title>Lifting the Veil of Non-Stationarity in Financial Market </title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -54,7 +54,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">A Multimodal Foundation Agent for Financial Trading: Tool-Augmented, Diversified, and Generalist</h1>
+            <h1 class="title is-1 publication-title">Lifting the Veil of Non-Stationarity in Financial Market</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -154,8 +154,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We propose MANAGER, a novel framework inspired by recent advancements in multimodal large language models and stochastic process models in finance. MANAGER models financial asset price dynamics through a market-state-dominated stochastic process, which explicitly decomposes price changes into three interpretable components: linear trend diffusion, trend fluctuations, and jump processes, capturing both stable and unstable market features. By integrating neural differential equations, MANAGER embeds these stochastic components into the position encoding, embeddings, attention mechanisms, and output logits of a multimodal macromodel, achieving interpretable predictions under varying market conditions. Additionally, we introduce a general modality synthesizer with a unified adversarial masking post-training strategy, enabling the adaptation of multimodal LLMs to the financial domain and completing missing modalities for better modeling of financial interactions. Extensive experiments on six real-world datasets, including stocks and cryptocurrencies, demonstrate that MANAGER achieves state-of-the-art performance in price movement and volatility prediction, with high prediction accuracy and trading profitability.
-          </p>
+            Financial asset price prediction is a critical task in financial analysis, yet it is challenging due to the non-stationarity of financial markets in which the distribution changes over time. Previous methods often simplify it into stationary market, which limits effectiveness in real-world. To address this, we propose Market-state Jump Diffusion Framework(MJDF), which contains a Market-state jump diffusion stochastic process(MJD-P) to model non-stationarity and a Market-state jump diffusion model(MJD-M) to do prediction with non-stationarity. MJD-P could models different stationary and non-stationary components of financial price dynamics, including diffusion, drift, and jump, which is expressed as an ordinary differential equation and could be sovled the ODE to get the componment with a neural network. MJD-M integrate these components into a Multimodal large language model to do prediction. Through temporal point position encoding, jump diffusion embedding, jump diffusion attention and jump diffusion uncertainty mechanisms, MJD-M could to do price forecast across various market conditions in an interpretable way. Futuhermore, we introduce a general modality synthesizer(MJD-S) that uses a unified adversarial masking post-training strategy to complete missing modalities and fine-tune MJD-M.Extensive experiments on real-world datasets, including stocks and cryptocurrencies, demonstrate that our approach outperforms existing methods in price movement prediction, achieving high accuracy and trading profitability.
         </div>
       </div>
     </div>
